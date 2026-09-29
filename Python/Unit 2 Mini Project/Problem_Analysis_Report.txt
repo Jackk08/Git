@@ -1,0 +1,7 @@
+Problem Analysis Report
+
+System Objective: To develop a Student Record Management System that stores, organizes, updates, and retrieves academic information using Python's built-in data structures.
+Information to Store: Core identity data, contact details, academic enrollments (department and subjects), and performance metrics (marks and attendance).
+Inputs: Student demographics, subject enrollment lists, numerical marks, and operational commands (add, update, search, delete).
+Outputs: Individual student profiles, calculated average marks, highest scorer identification, and department-wise student lists.
+Data Relationships: A single student profile acts as a central hub linked to one department, multiple subjects, and corresponding sequential marks and attendance records.

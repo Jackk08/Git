@@ -1,0 +1,7 @@
+Data Structure Selection Report
+
+Dictionaries: Used as the master database where the PRN is the key, and the student's full profile is the value. Dictionaries allow for instant data retrieval without searching through a list.
+Tuples: Used to store immutable core identity data like PRN, Registration Number, and Date of Birth. Tuples ensure this critical data cannot be accidentally modified during program execution.
+Lists: Used to store dynamic data that changes or needs ordering, such as marks, attendance, and enrolled subjects.
+Sets: Used to maintain unique, non-duplicate collections of university Departments, Subjects, and Clubs.
+Strings: Used for standard text inputs like Name, Address, and Email ID.

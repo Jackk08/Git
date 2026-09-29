@@ -1,0 +1,40 @@
+FUNCTION add_student(prn, reg_no, dob, name, dept, address, email, subjects, marks, attendance):
+    IF prn IN student_database THEN
+        PRINT "Error: Student already exists"
+    ELSE
+        student_database[prn] = { "identity": (prn, reg_no, dob), "name": name, "department": dept, "contact": {"address": address, "email": email}, "subjects": subjects, "marks": marks, "attendance": attendance }
+        department_set.ADD(dept)
+        subject_set.UPDATE(subjects)
+    END IF
+END FUNCTION
+
+FUNCTION search_student(prn):
+    IF prn IN student_database THEN
+        PRINT student_database[prn]
+    ELSE
+        PRINT "Error: Not found"
+    END IF
+END FUNCTION
+
+FUNCTION update_student(prn, new_marks, new_attendance):
+    IF prn IN student_database THEN
+        student_database[prn]["marks"] = new_marks
+        student_database[prn]["attendance"] = new_attendance
+    END IF
+END FUNCTION
+
+FUNCTION delete_student(prn):
+    IF prn IN student_database THEN
+        DELETE student_database[prn]
+    END IF
+END FUNCTION
+
+FUNCTION calculate_average(prn):
+    IF prn IN student_database THEN
+        marks_list = student_database[prn]["marks"]
+        average = SUM(marks_list) / LENGTH(marks_list)
+        PRINT average
+    ELSE
+        PRINT "Error: Not found"
+    END IF
+END FUNCTION

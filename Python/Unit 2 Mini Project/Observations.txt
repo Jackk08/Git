@@ -1,0 +1,6 @@
+Project Observations
+
+1. Dictionaries provided the most efficient way to retrieve a specific student's complete record instantly using the PRN as a primary key.
+2. Using Tuples for core identity data (PRN, Reg No, DOB) successfully prevented accidental modification of critical details during program execution.
+3. Sets automatically filtered out duplicate entries for departments and subjects, removing the need to write extra validation loops.
+4. Integrating multiple collections (combining Lists inside Dictionaries) allowed the system to effectively mimic a real-world relational database structure in a simple console application.

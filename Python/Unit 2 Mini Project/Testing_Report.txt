@@ -1,0 +1,19 @@
+Student Management System: Testing Report
+
+1. Menu Navigation Testing: 
+Successfully launched the interactive console menu and verified that choices 1-9 correctly route to their respective functions. Invalid choices (e.g., entering "10" or letters) trigger the "Invalid choice" error handling.
+
+2. Duplicate Record Testing (Option 1):
+Input: Attempted to add PRN "2026BCE101" a second time through the menu.
+Expected Output: System rejects the entry before asking for further details.
+Actual Output: "Error: Student with PRN 2026BCE101 already exists." (Passed)
+
+3. Invalid Input Testing (Option 2 & 4):
+Input: Searched for and attempted to delete a non-existent PRN ("2026BCE999").
+Expected Output: Error message stating student not found.
+Actual Output: "Error: Student with PRN 2026BCE999 not found." (Passed)
+
+4. Empty Record Testing (Option 6):
+Input: Selected "Find Highest Scorer" (Option 6) on an empty database.
+Expected Output: Graceful handling without crashing.
+Actual Output: "No students in the database." (Passed)

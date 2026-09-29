@@ -1,0 +1,41 @@
+1. Add New Student Record
+    1. Start operation.
+    2. Accept student identity inputs (PRN, Registration Number, Date of Birth) and store as a Tuple.
+    3. Accept standard text inputs (Name, Department, Address, Email) as Strings.
+    4. Accept academic data (Subjects, Marks, Attendance) as Lists.
+    5. Check if the PRN exists in the dictionary.
+    6. If yes, print error message.
+    7. If no, create a dictionary entry with PRN as key and a nested dictionary of data as value.
+    8. Add Department and Subjects to their respective Sets.
+    9. Stop operation.
+
+2. Search Student
+    1. Start operation.
+    2. Prompt for PRN.
+    3. Check if PRN exists in dictionary.
+    4. If yes, display student profile.
+    5. If no, print error message.
+    6. Stop operation.
+
+3. Update Student Information
+    1. Start operation.
+    2. Accept PRN to update.
+    3. Check if PRN exists.
+    4. If yes, accept new lists for marks and attendance, and overwrite existing data.
+    5. Stop operation.
+
+4. Delete Student Record
+    1. Start operation.
+    2. Accept PRN to delete.
+    3. Check if PRN exists.
+    4. If yes, delete the dictionary entry completely.
+    5. Stop operation.
+
+5. Calculate Average Marks
+    1. Start operation.
+    2. Accept PRN of the student.
+    3. Check if PRN exists.
+    4. If yes, retrieve the list of marks.
+    5. Calculate the sum of marks divided by the total number of marks.
+    6. Print the average.
+    7. Stop operation.
